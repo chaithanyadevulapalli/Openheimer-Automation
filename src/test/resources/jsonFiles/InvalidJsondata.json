@@ -1,0 +1,10 @@
+{
+  "natid": "natid-59",
+  "name": "hello FC",
+  "gender": "MALE",
+  "birthDate": "2001-04-04T22:59:59",
+  "deathDate": null,
+  "salary": -1100,
+  "taxPaid": 10,
+  "browniePoints": null
+}

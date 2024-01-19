@@ -1,0 +1,16 @@
+{
+  "natid": "natid-124",
+  "name": "hello FA",
+  "gender": "MALE",
+  "birthDate": "2001-04-04T22:59:59",
+  "deathDate": null,
+  "salary": 100.00,
+  "taxPaid": 10.00,
+  "browniePoints": null,
+  "vouchers": [
+    {
+      "voucherName": null,
+      "voucherType": "TRAVEL"
+    }
+  ]
+}

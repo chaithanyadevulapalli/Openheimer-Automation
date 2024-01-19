@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APIandUITestSuite">
+    <listeners>
+        <listener class-name="org.example.utils.ExtentReportListener"/>
+    </listeners>
+    <test name="APIandUITest">
+        <classes>
+            <class name="org.example.api.CreateHeroAPI"/>
+            <class name="org.example.api.CreateVoucherHeroApi"/>
+            <class name="org.example.api.SystemOwnerApi"/>
+            <class name="org.example.ui.tests.UITest"/>
+        </classes>
+    </test>
+</suite>
