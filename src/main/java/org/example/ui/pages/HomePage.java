@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class HomePage extends BasePage {
     private By addaHero = By.id("dropdownMenuButton2");
     private By uploadFile = By.xpath("//a[text()='Upload a csv file']");
@@ -31,7 +33,7 @@ public class HomePage extends BasePage {
     public void uploadInvalidCSV(String filePath) throws InterruptedException {
         driver.findElement(addaHero).click();
         driver.findElement(uploadFile).click();
-        Thread.sleep(3000);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         System.out.println("check.........1");
         driver.findElement(chooseFileInput).sendKeys(filePath);
         System.out.println("check.........2");

@@ -1,5 +1,6 @@
 package org.example.utils;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.record.PageBreakRecord;
 import org.testng.Assert;
 
@@ -77,5 +78,10 @@ public class FileVerification {
     private static boolean fileExists(String filePath) {
         File file = new File(filePath);
         return file.exists() && file.isFile();
+    }
+
+    public static void cleanFolder(String location) throws IOException {
+        File folder = new File (location);
+        FileUtils.cleanDirectory(folder);
     }
 }

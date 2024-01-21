@@ -6,6 +6,7 @@
     <test name="APIandUITest">
         <classes>
                <class name="org.example.ui.tests.UITest"/>
+
         </classes>
     </test>
 </suite>

@@ -21,7 +21,7 @@ import java.util.Map;
 
             // Check if the record already exists in the database
             if (DatabaseVerification.isRecordPresent(natid)) {
-                // If the record already exists, return error status code 400.
+                // If the record already exists, return error status code 400
                 fail("Record with natid " + natid + " already exists in the database. Should return error status code 400");
             }
             // Send API request
