@@ -30,6 +30,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class UITest extends BasePage {
+    int abc = 0;
     private String baseUrl = "http://localhost:9997/login";
     private String clUsername = "clerk";
     private String clPassword = "clerk";
@@ -41,7 +42,7 @@ public class UITest extends BasePage {
     private String invalidcsvFilePath = "src/test/resources/clerkData.csv";
 
     private String absolutecsvFilepath = getAbsolutePaths(csvFilePath);
-
+/***/
     private String invalidabsolutecsvFilepath = getAbsolutePaths(invalidcsvFilePath);
     private String jarpath = LoginPage.class.getProtectionDomain().getCodeSource().getLocation().getPath();
     String decodedPath = new File(jarpath).getAbsolutePath();
